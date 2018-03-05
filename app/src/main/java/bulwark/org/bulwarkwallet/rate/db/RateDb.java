@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 import bulwark.org.bulwarkwallet.contacts.AbstractSqliteDb;
 
 /**
- * Created by furszy on 7/5/17.
+ * Created by kaali on 7/5/17.
  */
 
 public class RateDb extends AbstractSqliteDb<BulwarkRate> {

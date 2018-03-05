@@ -20,7 +20,7 @@ import bulwark.org.bulwarkwallet.ui.transaction_send_activity.custom.inputs.Inpu
 import wallet.exceptions.TxNotFoundException;
 
 /**
- * Created by furszy on 8/14/17.
+ * Created by kaali on 8/14/17.
  */
 
 public class InputsDetailFragment extends BaseRecyclerFragment<InputWrapper> {

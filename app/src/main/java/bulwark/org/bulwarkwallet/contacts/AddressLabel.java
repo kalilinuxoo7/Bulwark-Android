@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * Created by furszy on 6/22/17.
+ * Created by kaali on 6/22/17.
  */
 
 public class AddressLabel implements Serializable{

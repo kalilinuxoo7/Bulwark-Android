@@ -23,15 +23,15 @@ import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
-import pivtrum.messages.BaseMsg;
-import pivtrum.messages.GetBalanceMsg;
-import pivtrum.messages.GetHistoryMsg;
-import pivtrum.messages.Method;
-import pivtrum.messages.SubscribeAddressMsg;
-import pivtrum.messages.VersionMsg;
+import bwktrum.messages.BaseMsg;
+import bwktrum.messages.GetBalanceMsg;
+import bwktrum.messages.GetHistoryMsg;
+import bwktrum.messages.Method;
+import bwktrum.messages.SubscribeAddressMsg;
+import bwktrum.messages.VersionMsg;
 
 /**
- * Created by furszy on 6/5/17.
+ * Created by kaali on 6/5/17.
  */
 
 public class ClientTest {

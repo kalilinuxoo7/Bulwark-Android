@@ -9,7 +9,7 @@ import bulwark.org.bulwarkwallet.contacts.AddressLabel;
 import bulwark.org.bulwarkwallet.module.BulwarkContext;
 
 /**
- * Created by furszy on 8/4/17.
+ * Created by kaali on 8/4/17.
  */
 
 public class InputWrapper implements Serializable{

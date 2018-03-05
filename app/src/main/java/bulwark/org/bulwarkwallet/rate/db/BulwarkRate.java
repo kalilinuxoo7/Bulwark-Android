@@ -3,7 +3,7 @@ package bulwark.org.bulwarkwallet.rate.db;
 import java.math.BigDecimal;
 
 /**
- * Created by furszy on 7/5/17.
+ * Created by kaali on 7/5/17.
  */
 
 public class BulwarkRate {

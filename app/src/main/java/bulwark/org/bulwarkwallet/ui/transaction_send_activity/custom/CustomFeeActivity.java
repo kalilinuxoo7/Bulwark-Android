@@ -18,7 +18,7 @@ import static bulwark.org.bulwarkwallet.ui.transaction_send_activity.custom.Cust
 import static bulwark.org.bulwarkwallet.ui.transaction_send_activity.custom.CustomFeeFragment.INTENT_EXTRA_IS_TOTAL_FEE;
 
 /**
- * Created by furszy on 8/3/17.
+ * Created by kaali on 8/3/17.
  */
 
 public class CustomFeeActivity extends BaseActivity {

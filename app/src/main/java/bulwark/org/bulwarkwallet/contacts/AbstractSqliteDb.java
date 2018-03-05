@@ -11,7 +11,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.util.ArrayList;
 
 /**
- * Created by furszy on 6/6/17.
+ * Created by kaali on 6/6/17.
  */
 
 public abstract class AbstractSqliteDb<T> extends SQLiteOpenHelper {

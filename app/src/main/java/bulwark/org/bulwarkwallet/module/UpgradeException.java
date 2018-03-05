@@ -1,7 +1,7 @@
 package bulwark.org.bulwarkwallet.module;
 
 /**
- * Created by furszy on 10/8/17.
+ * Created by kaali on 10/8/17.
  */
 
 public class UpgradeException extends Exception {

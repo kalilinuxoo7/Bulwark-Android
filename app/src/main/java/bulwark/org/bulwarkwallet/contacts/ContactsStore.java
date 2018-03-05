@@ -13,7 +13,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Created by furszy on 6/22/17.
+ * Created by kaali on 6/22/17.
  */
 
 public class ContactsStore extends AbstractSqliteDb<AddressLabel>{

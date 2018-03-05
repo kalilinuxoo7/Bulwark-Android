@@ -11,7 +11,7 @@ import bulwark.org.bulwarkwallet.module.BulwarkModule;
 import bulwark.org.bulwarkwallet.ui.wallet_activity.TransactionWrapper;
 
 /**
- * Created by furszy on 8/14/17.
+ * Created by kaali on 8/14/17.
  */
 
 public class TxUtils {

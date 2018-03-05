@@ -31,7 +31,7 @@ import static bulwark.org.bulwarkwallet.ui.transaction_detail_activity.FragmentT
 import static bulwark.org.bulwarkwallet.utils.TxUtils.getAddressOrContact;
 
 /**
- * Created by furszy on 6/29/17.
+ * Created by kaali on 6/29/17.
  */
 
 public class TransactionsFragmentBase extends BaseRecyclerFragment<TransactionWrapper> {

@@ -14,7 +14,7 @@ import bulwark.org.bulwarkwallet.R;
 import bulwark.org.bulwarkwallet.module.BulwarkContext;
 
 /**
- * Created by furszy on 7/10/17.
+ * Created by kaali on 7/10/17.
  */
 
 public class IntentsUtils {

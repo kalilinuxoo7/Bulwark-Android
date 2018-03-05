@@ -11,7 +11,7 @@ import org.bulwarkj.params.TestNet3Params;
 import java.io.File;
 
 /**
- * Created by furszy on 6/4/17.
+ * Created by kaali on 6/4/17.
  */
 
 public class BulwarkContext {
@@ -30,7 +30,7 @@ public class BulwarkContext {
     public static final long BULWARK_WALLET_APP_RELEASED_ON_PLAY_STORE_TIME = 1500940800;
 
     // report mail
-    public static final String REPORT_EMAIL = "matiasfurszyfer@gmail.com";
+    public static final String REPORT_EMAIL = "matiaskaalifer@gmail.com";
     /** Subject line for manually reported issues. */
     public static final String REPORT_SUBJECT_ISSUE = "Reported issue";
 

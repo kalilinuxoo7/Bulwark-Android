@@ -7,7 +7,7 @@ import android.content.Intent;
 import bulwark.org.bulwarkwallet.ui.wallet_activity.WalletActivity;
 
 /**
- * Created by furszy on 10/19/17.
+ * Created by kaali on 10/19/17.
  */
 
 public class NavigationUtils {

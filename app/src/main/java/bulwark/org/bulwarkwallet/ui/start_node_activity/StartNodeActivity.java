@@ -18,9 +18,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import global.PivtrumGlobalData;
-import pivtrum.PivtrumPeer;
-import pivtrum.PivtrumPeerData;
+import global.BwktrumGlobalData;
+import bwktrum.BwktrumPeer;
+import bwktrum.BwktrumPeerData;
 import bulwark.org.bulwarkwallet.R;
 import bulwark.org.bulwarkwallet.ui.base.BaseActivity;
 import bulwark.org.bulwarkwallet.ui.pincode_activity.PincodeActivity;
@@ -28,7 +28,7 @@ import bulwark.org.bulwarkwallet.ui.wallet_activity.WalletActivity;
 import bulwark.org.bulwarkwallet.utils.DialogBuilder;
 import bulwark.org.bulwarkwallet.utils.DialogsUtil;
 
-import static global.PivtrumGlobalData.FURSZY_TESTNET_SERVER;
+import static global.BwktrumGlobalData.KAALI_TESTNET_SERVER;
 
 /**
  * Created by Neoperol on 6/27/17.
@@ -42,7 +42,7 @@ public class StartNodeActivity extends BaseActivity {
     private ArrayAdapter<String> adapter;
     private List<String> hosts = new ArrayList<>();
 
-    private static final List<PivtrumPeerData> trustedNodes = PivtrumGlobalData.listTrustedHosts();
+    private static final List<BwktrumPeerData> trustedNodes = BwktrumGlobalData.listTrustedHosts();
 
     @Override
     protected void onCreateView(Bundle savedInstanceState, ViewGroup container) {
@@ -58,15 +58,15 @@ public class StartNodeActivity extends BaseActivity {
             public void onClick(View view) {
                 DialogBuilder dialogBuilder = DialogsUtil.buildtrustedNodeDialog(StartNodeActivity.this, new DialogsUtil.TrustedNodeDialogListener() {
                     @Override
-                    public void onNodeSelected(PivtrumPeerData pivtrumPeerData) {
-                        if(!trustedNodes.contains(pivtrumPeerData)) {
+                    public void onNodeSelected(BwktrumPeerData bwktrumPeerData) {
+                        if(!trustedNodes.contains(bwktrumPeerData)) {
                             dropdown.setAdapter(null);
                             adapter.clear();
                             hosts = new ArrayList<String>();
-                            trustedNodes.add(pivtrumPeerData);
-                            for (PivtrumPeerData trustedNode : trustedNodes) {
-                                if (trustedNode.getHost().equals(FURSZY_TESTNET_SERVER)) {
-                                    hosts.add("pivt.furszy.tech");
+                            trustedNodes.add(bwktrumPeerData);
+                            for (BwktrumPeerData trustedNode : trustedNodes) {
+                                if (trustedNode.getHost().equals(KAALI_TESTNET_SERVER)) {
+                                    hosts.add("pivt.kaali.tech");
                                 } else
                                     hosts.add(trustedNode.getHost());
                             }
@@ -87,7 +87,7 @@ public class StartNodeActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 int selected = dropdown.getSelectedItemPosition();
-                PivtrumPeerData selectedNode = trustedNodes.get(selected);
+                BwktrumPeerData selectedNode = trustedNodes.get(selected);
                 boolean isStarted = bulwarkApplication.getAppConf().getTrustedNode()!=null;
                 bulwarkApplication.setTrustedServer(selectedNode);
 
@@ -109,20 +109,20 @@ public class StartNodeActivity extends BaseActivity {
         dropdown = (Spinner)findViewById(R.id.spinner);
 
         // add connected node if it's not on the list
-        PivtrumPeerData pivtrumPeer = bulwarkApplication.getAppConf().getTrustedNode();
-        if (pivtrumPeer!=null && !pivtrumPeer.getHost().equals(FURSZY_TESTNET_SERVER)){
-            trustedNodes.add(pivtrumPeer);
+        BwktrumPeerData bwktrumPeer = bulwarkApplication.getAppConf().getTrustedNode();
+        if (bwktrumPeer!=null && !bwktrumPeer.getHost().equals(KAALI_TESTNET_SERVER)){
+            trustedNodes.add(bwktrumPeer);
         }
 
         int selectionPos = 0;
 
         for (int i=0;i<trustedNodes.size();i++){
-            PivtrumPeerData trustedNode = trustedNodes.get(i);
-            if (pivtrumPeer!=null && pivtrumPeer.getHost().equals(trustedNode)){
+            BwktrumPeerData trustedNode = trustedNodes.get(i);
+            if (bwktrumPeer!=null && bwktrumPeer.getHost().equals(trustedNode)){
                 selectionPos = i;
             }
-            if (trustedNode.getHost().equals(FURSZY_TESTNET_SERVER)){
-                hosts.add("pivt.furszy.tech");
+            if (trustedNode.getHost().equals(KAALI_TESTNET_SERVER)){
+                hosts.add("pivt.kaali.tech");
             }else
                 hosts.add(trustedNode.getHost());
         }

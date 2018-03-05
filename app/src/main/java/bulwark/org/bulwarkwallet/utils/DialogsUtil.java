@@ -22,8 +22,8 @@ import java.net.Socket;
 import java.net.SocketAddress;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import global.PivtrumGlobalData;
-import pivtrum.PivtrumPeerData;
+import global.BwktrumGlobalData;
+import bwktrum.BwktrumPeerData;
 import bulwark.org.bulwarkwallet.R;
 import bulwark.org.bulwarkwallet.module.BulwarkContext;
 import bulwark.org.bulwarkwallet.ui.address_add_activity.AddContactActivity;
@@ -31,7 +31,7 @@ import bulwark.org.bulwarkwallet.ui.base.dialogs.SimpleTextDialog;
 import bulwark.org.bulwarkwallet.ui.base.dialogs.SimpleTwoButtonsDialog;
 
 /**
- * Created by furszy on 7/5/17.
+ * Created by kaali on 7/5/17.
  */
 
 public class DialogsUtil {
@@ -92,7 +92,7 @@ public class DialogsUtil {
 
 
     public interface TrustedNodeDialogListener{
-        void onNodeSelected(PivtrumPeerData pivtrumPeerData);
+        void onNodeSelected(BwktrumPeerData bwktrumPeerData);
     }
 
     public static DialogBuilder buildtrustedNodeDialog(final Activity context, final TrustedNodeDialogListener trustedNodeDialogListener){
@@ -115,7 +115,7 @@ public class DialogsUtil {
                     final String tcpPortStr = editTcp.getText().toString();
                     final String sslPortStr = editSsl.getText().toString();
                     int tcpPort = BulwarkContext.NETWORK_PARAMETERS.getPort();
-                    if (host.equals(PivtrumGlobalData.FURSZY_TESTNET_SERVER)){
+                    if (host.equals(BwktrumGlobalData.KAALI_TESTNET_SERVER)){
                         tcpPort = 8443;
                     }
                     int sslPort = 0;
@@ -138,7 +138,7 @@ public class DialogsUtil {
                                 public void run() {
                                     if(check){
                                         trustedNodeDialogListener.onNodeSelected(
-                                                new PivtrumPeerData(
+                                                new BwktrumPeerData(
                                                         host,
                                                         finalTcpPort,
                                                         finalSslPort)

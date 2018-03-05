@@ -21,7 +21,7 @@ import static bulwark.org.bulwarkwallet.service.IntentsConstants.ACTION_STORED_B
 import static bulwark.org.bulwarkwallet.service.IntentsConstants.ACTION_TRUSTED_PEER_CONNECTION_FAIL;
 
 /**
- * Created by furszy on 6/8/17.
+ * Created by kaali on 6/8/17.
  */
 
 public class BulwarkActivity extends AppCompatActivity {

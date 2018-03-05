@@ -1,7 +1,7 @@
 package bulwark.org.bulwarkwallet.ui.transaction_send_activity.custom.outputs;
 
 /**
- * Created by furszy on 8/9/17.
+ * Created by kaali on 8/9/17.
  */
 
 class InvalidFieldException extends Exception {

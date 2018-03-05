@@ -22,7 +22,7 @@ import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
 import static android.content.Intent.FLAG_ACTIVITY_SINGLE_TOP;
 
 /**
- * Created by furszy on 8/18/17.
+ * Created by kaali on 8/18/17.
  */
 
 public class AndroidUtils {

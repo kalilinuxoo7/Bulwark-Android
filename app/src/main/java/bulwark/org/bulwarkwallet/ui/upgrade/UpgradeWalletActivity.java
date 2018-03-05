@@ -24,7 +24,7 @@ import bulwark.org.bulwarkwallet.ui.base.dialogs.SimpleTextDialog;
 import bulwark.org.bulwarkwallet.utils.DialogsUtil;
 
 /**
- * Created by furszy on 10/8/17.
+ * Created by kaali on 10/8/17.
  */
 
 public class UpgradeWalletActivity extends BaseActivity {

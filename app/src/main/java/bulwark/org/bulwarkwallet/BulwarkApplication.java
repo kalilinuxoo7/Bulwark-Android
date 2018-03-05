@@ -41,8 +41,8 @@ import ch.qos.logback.core.rolling.TimeBasedRollingPolicy;
 import global.ContextWrapper;
 import global.WalletConfiguration;
 import global.utils.Io;
-import pivtrum.NetworkConf;
-import pivtrum.PivtrumPeerData;
+import bwktrum.NetworkConf;
+import bwktrum.BwktrumPeerData;
 import bulwark.org.bulwarkwallet.contacts.ContactsStore;
 import bulwark.org.bulwarkwallet.module.BulwarkContext;
 import bulwark.org.bulwarkwallet.module.BulwarkModule;
@@ -264,7 +264,7 @@ public class BulwarkApplication extends Application implements ContextWrapper {
      *
      * @param trustedServer
      */
-    public void setTrustedServer(PivtrumPeerData trustedServer) {
+    public void setTrustedServer(BwktrumPeerData trustedServer) {
         networkConf.setTrustedServer(trustedServer);
         bulwarkModule.getConf().saveTrustedNode(trustedServer.getHost(),0);
         appConf.saveTrustedNode(trustedServer);

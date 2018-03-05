@@ -11,7 +11,7 @@ import bulwark.org.bulwarkwallet.ui.wallet_activity.WalletActivity;
 import bulwark.org.bulwarkwallet.utils.AppConf;
 
 /**
- * Created by furszy on 8/19/17.
+ * Created by kaali on 8/19/17.
  */
 
 public class InitialActivity extends AppCompatActivity {

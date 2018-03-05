@@ -10,7 +10,7 @@ import bulwark.org.bulwarkwallet.BulwarkApplication;
 import bulwark.org.bulwarkwallet.module.BulwarkModule;
 
 /**
- * Created by furszy on 6/29/17.
+ * Created by kaali on 6/29/17.
  */
 
 public class BaseFragment extends Fragment {

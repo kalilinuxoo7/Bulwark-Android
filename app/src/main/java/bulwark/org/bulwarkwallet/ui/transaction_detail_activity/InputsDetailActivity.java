@@ -7,7 +7,7 @@ import bulwark.org.bulwarkwallet.R;
 import bulwark.org.bulwarkwallet.ui.base.BaseActivity;
 
 /**
- * Created by furszy on 8/14/17.
+ * Created by kaali on 8/14/17.
  */
 
 public class InputsDetailActivity extends BaseActivity {

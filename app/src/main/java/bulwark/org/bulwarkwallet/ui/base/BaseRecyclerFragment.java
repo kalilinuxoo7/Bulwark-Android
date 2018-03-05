@@ -23,7 +23,7 @@ import bulwark.org.bulwarkwallet.ui.base.tools.adapter.BaseRecyclerAdapter;
 import bulwark.org.bulwarkwallet.ui.base.tools.adapter.BaseRecyclerViewHolder;
 
 /**
- * Created by furszy on 6/20/17.
+ * Created by kaali on 6/20/17.
  */
 
 public abstract class BaseRecyclerFragment<T> extends BaseFragment {

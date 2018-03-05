@@ -18,7 +18,7 @@ import static bulwark.org.bulwarkwallet.module.BulwarkContext.PEER_DISCOVERY_TIM
 import static bulwark.org.bulwarkwallet.module.BulwarkContext.PEER_TIMEOUT_MS;
 
 /**
- * Created by furszy on 6/4/17.
+ * Created by kaali on 6/4/17.
  */
 
 public class WalletConfImp extends Configurations implements WalletConfiguration {

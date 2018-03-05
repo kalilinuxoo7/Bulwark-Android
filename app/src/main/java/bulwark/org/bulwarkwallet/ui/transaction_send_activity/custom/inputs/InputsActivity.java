@@ -14,7 +14,7 @@ import bulwark.org.bulwarkwallet.ui.base.BaseActivity;
 import static bulwark.org.bulwarkwallet.ui.transaction_send_activity.SendActivity.INTENT_EXTRA_TOTAL_AMOUNT;
 
 /**
- * Created by furszy on 8/4/17.
+ * Created by kaali on 8/4/17.
  */
 
 public class InputsActivity extends BaseActivity {

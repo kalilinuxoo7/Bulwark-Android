@@ -11,8 +11,8 @@ import android.widget.Toast;
 import java.util.List;
 import java.util.Random;
 
-import global.PivtrumGlobalData;
-import pivtrum.PivtrumPeerData;
+import global.BwktrumGlobalData;
+import bwktrum.BwktrumPeerData;
 import bulwark.org.bulwarkwallet.R;
 import bulwark.org.bulwarkwallet.ui.backup_mnemonic_activity.MnemonicActivity;
 import bulwark.org.bulwarkwallet.ui.base.BaseActivity;
@@ -66,7 +66,7 @@ public class PincodeActivity extends BaseActivity implements KeyboardFragment.on
     private void goNext() {
         if (bulwarkApplication.getAppConf().getTrustedNode()==null){
             // select random trusted node
-            List<PivtrumPeerData> nodes = PivtrumGlobalData.listTrustedHosts();
+            List<BwktrumPeerData> nodes = BwktrumGlobalData.listTrustedHosts();
             Random random = new Random();
             bulwarkApplication.setTrustedServer(nodes.get(random.nextInt(nodes.size())));
             bulwarkApplication.stopBlockchain();

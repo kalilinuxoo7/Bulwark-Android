@@ -31,7 +31,7 @@ import static bulwark.org.bulwarkwallet.utils.AndroidUtils.copyToClipboard;
 import static bulwark.org.bulwarkwallet.utils.QrUtils.encodeAsBitmap;
 
 /**
- * Created by furszy on 6/8/17.
+ * Created by kaali on 6/8/17.
  */
 
 public class MyAddressFragment extends Fragment implements View.OnClickListener {

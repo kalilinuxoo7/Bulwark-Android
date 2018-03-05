@@ -10,7 +10,7 @@ import bulwark.org.bulwarkwallet.ui.base.BaseActivity;
 import bulwark.org.bulwarkwallet.ui.pincode_activity.PincodeActivity;
 
 /**
- * Created by furszy on 8/7/17.
+ * Created by kaali on 8/7/17.
  * //
  */
 

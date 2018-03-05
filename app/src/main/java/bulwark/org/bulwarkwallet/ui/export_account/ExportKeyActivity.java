@@ -25,7 +25,7 @@ import static android.graphics.Color.WHITE;
 import static bulwark.org.bulwarkwallet.utils.QrUtils.encodeAsBitmap;
 
 /**
- * Created by furszy on 8/29/17.
+ * Created by kaali on 8/29/17.
  */
 
 public class ExportKeyActivity extends BaseActivity implements View.OnClickListener {

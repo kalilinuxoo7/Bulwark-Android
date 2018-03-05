@@ -34,7 +34,7 @@ import bulwark.org.bulwarkwallet.utils.CrashReporter;
 import static bulwark.org.bulwarkwallet.utils.AndroidUtils.shareText;
 
 /**
- * Created by furszy on 8/18/17.
+ * Created by kaali on 8/18/17.
  */
 
 public class CrashPopupActivity extends AppCompatActivity implements View.OnClickListener {

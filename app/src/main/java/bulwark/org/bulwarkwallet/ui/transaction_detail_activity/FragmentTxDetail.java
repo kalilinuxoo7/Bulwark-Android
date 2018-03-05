@@ -37,7 +37,7 @@ import static bulwark.org.bulwarkwallet.ui.transaction_send_activity.custom.inpu
 import static bulwark.org.bulwarkwallet.ui.transaction_send_activity.custom.inputs.InputsFragment.INTENT_EXTRA_UNSPENT_WRAPPERS;
 
 /**
- * Created by furszy on 8/7/17.
+ * Created by kaali on 8/7/17.
  */
 
 public class FragmentTxDetail extends BaseFragment implements View.OnClickListener {

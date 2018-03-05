@@ -42,7 +42,7 @@ import java.util.concurrent.TimeoutException;
 import chain.BlockchainManager;
 import global.ContextWrapper;
 import global.WalletConfiguration;
-import pivtrum.PivtrumPeergroup;
+import bwktrum.BwktrumPeergroup;
 import bulwark.org.bulwarkwallet.contacts.AddressLabel;
 import bulwark.org.bulwarkwallet.contacts.ContactsStore;
 import bulwark.org.bulwarkwallet.module.wallet.WalletBackupHelper;
@@ -67,7 +67,7 @@ public class BulwarkModuleImp implements BulwarkModule {
     private WalletConfiguration walletConfiguration;
     private WalletManager walletManager;
     private BlockchainManager blockchainManager;
-    private PivtrumPeergroup peergroup;
+    private BwktrumPeergroup peergroup;
     private ContactsStore contactsStore;
     private RateDb rateDb;
 
@@ -89,7 +89,7 @@ public class BulwarkModuleImp implements BulwarkModule {
     }
 
     // todo: clean this.
-    //public void setPivtrumPeergroup(PivtrumPeergroup peergroup){
+    //public void setBwktrumPeergroup(BwktrumPeergroup peergroup){
         //peergroup.setAddressStore(addressStore);
         //peergroup.setWalletManager(walletManager);
         //this.peergroup = peergroup;

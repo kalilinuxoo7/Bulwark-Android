@@ -9,7 +9,7 @@ import bulwark.org.bulwarkwallet.ui.base.BaseActivity;
 import bulwark.org.bulwarkwallet.utils.NavigationUtils;
 
 /**
- * Created by furszy on 6/8/17.
+ * Created by kaali on 6/8/17.
  */
 
 public class QrActivity extends BaseActivity {

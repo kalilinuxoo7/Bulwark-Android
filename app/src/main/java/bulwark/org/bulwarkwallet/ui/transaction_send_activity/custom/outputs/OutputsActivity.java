@@ -21,7 +21,7 @@ import bulwark.org.bulwarkwallet.ui.base.BaseActivity;
 import bulwark.org.bulwarkwallet.utils.DialogsUtil;
 
 /**
- * Created by furszy on 8/4/17.
+ * Created by kaali on 8/4/17.
  */
 
 public class OutputsActivity extends BaseActivity {

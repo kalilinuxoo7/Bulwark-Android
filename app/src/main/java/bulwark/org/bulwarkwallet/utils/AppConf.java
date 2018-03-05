@@ -2,12 +2,12 @@ package bulwark.org.bulwarkwallet.utils;
 
 import android.content.SharedPreferences;
 
-import pivtrum.PivtrumPeerData;
+import bwktrum.BwktrumPeerData;
 
 import static bulwark.org.bulwarkwallet.module.BulwarkContext.DEFAULT_RATE_COIN;
 
 /**
- * Created by furszy on 6/8/17.
+ * Created by kaali on 6/8/17.
  */
 
 public class AppConf extends Configurations {
@@ -47,17 +47,17 @@ public class AppConf extends Configurations {
         return getString(PINCODE,null);
     }
 
-    public void saveTrustedNode(PivtrumPeerData pivtrumPeerData){
-        save(TRUSTED_NODE_HOST,pivtrumPeerData.getHost());
-        save(TRUSTED_NODE_TCP,pivtrumPeerData.getTcpPort());
-        save(TRUSTED_NODE_SSL,pivtrumPeerData.getSslPort());
+    public void saveTrustedNode(BwktrumPeerData bwktrumPeerData){
+        save(TRUSTED_NODE_HOST,bwktrumPeerData.getHost());
+        save(TRUSTED_NODE_TCP,bwktrumPeerData.getTcpPort());
+        save(TRUSTED_NODE_SSL,bwktrumPeerData.getSslPort());
     }
-    public PivtrumPeerData getTrustedNode(){
+    public BwktrumPeerData getTrustedNode(){
         String host = getString(TRUSTED_NODE_HOST,null);
         if (host!=null){
             int tcp = getInt(TRUSTED_NODE_TCP,-1);
             int ssl = getInt(TRUSTED_NODE_TCP,-1);
-            return new PivtrumPeerData(host,tcp,ssl);
+            return new BwktrumPeerData(host,tcp,ssl);
         }else
             return null;
     }

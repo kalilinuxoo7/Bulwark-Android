@@ -22,7 +22,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by furszy on 10/17/17.
+ * Created by kaali on 10/17/17.
  */
 
 public class SnappyBlockchainStore implements BlockStore{

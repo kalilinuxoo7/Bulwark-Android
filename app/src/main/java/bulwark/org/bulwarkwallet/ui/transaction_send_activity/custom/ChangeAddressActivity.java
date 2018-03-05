@@ -25,7 +25,7 @@ import static bulwark.org.bulwarkwallet.utils.scanner.ScanActivity.INTENT_EXTRA_
 
 
 /**
- * Created by furszy on 10/17/17.
+ * Created by kaali on 10/17/17.
  */
 
 public class ChangeAddressActivity extends BaseActivity {

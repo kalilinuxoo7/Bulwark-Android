@@ -3,7 +3,7 @@ package bulwark.org.bulwarkwallet.module;
 import java.util.concurrent.TimeoutException;
 
 /**
- * Created by furszy on 10/7/17.
+ * Created by kaali on 10/7/17.
  */
 
 public class CantSweepBalanceException extends Throwable {

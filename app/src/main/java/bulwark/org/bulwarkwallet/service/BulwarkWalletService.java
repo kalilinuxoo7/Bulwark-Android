@@ -47,7 +47,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import chain.BlockchainManager;
 import chain.BlockchainState;
 import chain.Impediment;
-import pivtrum.listeners.AddressListener;
+import bwktrum.listeners.AddressListener;
 import bulwark.org.bulwarkwallet.BulwarkApplication;
 import bulwark.org.bulwarkwallet.R;
 import bulwark.org.bulwarkwallet.module.BulwarkContext;
@@ -78,7 +78,7 @@ import static bulwark.org.bulwarkwallet.service.IntentsConstants.NOT_BLOCKCHAIN_
 import static bulwark.org.bulwarkwallet.service.IntentsConstants.NOT_COINS_RECEIVED;
 
 /**
- * Created by furszy on 6/12/17.
+ * Created by kaali on 6/12/17.
  */
 
 public class BulwarkWalletService extends Service{
@@ -87,7 +87,7 @@ public class BulwarkWalletService extends Service{
 
     private BulwarkApplication bulwarkApplication;
     private BulwarkModuleImp module;
-    //private PivtrumPeergroup pivtrumPeergroup;
+    //private BwktrumPeergroup bwktrumPeergroup;
     private BlockchainManager blockchainManager;
 
     private PeerConnectivityListener peerConnectivityListener;
@@ -326,10 +326,10 @@ public class BulwarkWalletService extends Service{
             bulwarkApplication = BulwarkApplication.getInstance();
             module = (BulwarkModuleImp) bulwarkApplication.getModule();
             blockchainManager = module.getBlockchainManager();
-            // connect to pivtrum node
-            /*pivtrumPeergroup = new PivtrumPeergroup(bulwarkApplication.getNetworkConf());
-            pivtrumPeergroup.addAddressListener(addressListener);
-            module.setPivtrumPeergroup(pivtrumPeergroup);*/
+            // connect to bwktrum node
+            /*bwktrumPeergroup = new BwktrumPeergroup(bulwarkApplication.getNetworkConf());
+            bwktrumPeergroup.addAddressListener(addressListener);
+            module.setBwktrumPeergroup(bwktrumPeergroup);*/
 
             // Schedule service
             tryScheduleService();
@@ -357,7 +357,7 @@ public class BulwarkWalletService extends Service{
             registerReceiver(connectivityReceiver, intentFilter); // implicitly init PeerGroup
 
             // initilizing trusted node.
-            //pivtrumPeergroup.start();
+            //bwktrumPeergroup.start();
 
 
         } catch (Error e){
@@ -433,8 +433,8 @@ public class BulwarkWalletService extends Service{
             }*/
             blockchainManager.destroy(resetBlockchainOnShutdown);
 
-            /*if (pivtrumPeergroup.isRunning()) {
-                pivtrumPeergroup.shutdown();
+            /*if (bwktrumPeergroup.isRunning()) {
+                bwktrumPeergroup.shutdown();
             }*/
 
             if (wakeLock.isHeld()) {

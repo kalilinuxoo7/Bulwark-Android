@@ -22,7 +22,7 @@ import bulwark.org.bulwarkwallet.utils.DialogsUtil;
 import static bulwark.org.bulwarkwallet.utils.CrashReporter.appendSavedBackgroundTraces;
 
 /**
- * Created by furszy on 8/30/17.
+ * Created by kaali on 8/30/17.
  */
 
 public class SettingsWatchOnly extends BaseActivity {

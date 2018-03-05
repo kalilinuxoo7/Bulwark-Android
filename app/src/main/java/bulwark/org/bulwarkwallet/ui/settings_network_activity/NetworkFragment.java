@@ -15,7 +15,7 @@ import bulwark.org.bulwarkwallet.ui.base.BaseRecyclerFragment;
 import bulwark.org.bulwarkwallet.ui.base.tools.adapter.BaseRecyclerAdapter;
 
 /**
- * Created by furszy on 7/2/17.
+ * Created by kaali on 7/2/17.
  */
 
 public class NetworkFragment extends BaseRecyclerFragment<Peer> {

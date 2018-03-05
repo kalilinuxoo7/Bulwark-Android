@@ -9,7 +9,7 @@ import bulwark.org.bulwarkwallet.R;
 import bulwark.org.bulwarkwallet.ui.base.tools.adapter.BaseRecyclerViewHolder;
 
 /**
- * Created by furszy on 8/4/17.
+ * Created by kaali on 8/4/17.
  */
 
 public class OutputHolder extends BaseRecyclerViewHolder{
