@@ -6,7 +6,7 @@ import java.util.Collection;
 import java.util.List;
 
 /**
- * Created by kaali on 6/12/17.
+ * Created by furszy on 6/12/17.
  *
  * Class in charge of have the default params and save data from the network like servers.
  */
