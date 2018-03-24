@@ -11,15 +11,15 @@ import bwktrum.BwktrumPeerData;
 
 public class BwktrumGlobalData {
 
-    public static final String KAALI_TESTNET_SERVER = "185.101.98.175";
+    public static final String KAALI_TESTNET_SERVER = "node1.bulwarkcrypto.com";
 
-    public static final String[] TRUSTED_NODES = new String[]{"node.bulwarkwiki.org"};
+    public static final String[] TRUSTED_NODES = new String[]{"node1.bulwarkcrypto.com"};
 
     public static final List<BwktrumPeerData> listTrustedHosts(){
         List<BwktrumPeerData> list = new ArrayList<>();
-        list.add(new BwktrumPeerData(KAALI_TESTNET_SERVER,8443,55552));
+        list.add(new BwktrumPeerData(KAALI_TESTNET_SERVER,52543,55552));
         for (String trustedNode : TRUSTED_NODES) {
-            list.add(new BwktrumPeerData(trustedNode,51472,55552));
+            list.add(new BwktrumPeerData(trustedNode,52543,55552));
         }
         return list;
     }

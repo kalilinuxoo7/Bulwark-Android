@@ -116,7 +116,7 @@ public class DialogsUtil {
                     final String sslPortStr = editSsl.getText().toString();
                     int tcpPort = BulwarkContext.NETWORK_PARAMETERS.getPort();
                     if (host.equals(BwktrumGlobalData.KAALI_TESTNET_SERVER)){
-                        tcpPort = 8443;
+                        tcpPort = 52543;
                     }
                     int sslPort = 0;
                     if (tcpPortStr.length() > 0) {

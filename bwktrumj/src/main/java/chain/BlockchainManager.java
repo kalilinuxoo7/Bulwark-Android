@@ -286,7 +286,7 @@ public class BlockchainManager {
                                 LOG.info("trusted peer '" + trustedPeerHost + "'" + (connectTrustedPeerOnly ? " only" : ""));
                                 final InetSocketAddress addr;
                                 if (trustedPeerHost.equals(KAALI_TESTNET_SERVER) && !conf.isTest()){
-                                    addr = new InetSocketAddress(trustedPeerHost, 8443);
+                                    addr = new InetSocketAddress(trustedPeerHost, 52543);
                                 }else {
                                     addr = new InetSocketAddress(trustedPeerHost, conf.getNetworkParams().getPort());
                                 }

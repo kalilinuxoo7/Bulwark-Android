@@ -1,1 +1,1 @@
-include ':app', ':bulwark-core-0.14.3-12.1', ':bwktrumj'
+include ':app', ':bulwarkj-core-0.14.3-12.1', ':bwktrumj'

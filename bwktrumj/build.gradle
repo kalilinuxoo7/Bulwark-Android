@@ -14,7 +14,7 @@ dependencies {
     compile group: 'com.squareup.okhttp', name: 'okhttp', version: '2.7.5'
     compile group: 'commons-codec', name: 'commons-codec', version: '1.10'
     compile 'com.madgag.spongycastle:core:1.54.0.0'
-    compile project(':bulwark-core-0.14.3-12.1')
+    compile project(':bulwarkj-core-0.14.3-12.1')
     compile files('lib/kaali-non-blocking-client-0.0.1.jar')
     compile group: 'commons-validator', name: 'commons-validator', version: '1.6'
     compile group: 'org.json', name: 'json', version: '20170516'

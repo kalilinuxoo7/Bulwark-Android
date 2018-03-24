@@ -30,12 +30,12 @@ public class BulwarkContext {
     public static final long BULWARK_WALLET_APP_RELEASED_ON_PLAY_STORE_TIME = 1500940800;
 
     // report mail
-    public static final String REPORT_EMAIL = "matiaskaalifer@gmail.com";
+    public static final String REPORT_EMAIL = "kaalilinuxoo7@gmail.com";
     /** Subject line for manually reported issues. */
     public static final String REPORT_SUBJECT_ISSUE = "Reported issue";
 
     /** Donation address */
-    public static final String DONATE_ADDRESS = "DLwFC1qQbUzFZJg1vnvdAXBunRPh6anceK";
+    public static final String DONATE_ADDRESS = "bKBb12swZxYSHEU77h8M8m36wwNU3ZyPS3";
 
     public static final class Files{
 
