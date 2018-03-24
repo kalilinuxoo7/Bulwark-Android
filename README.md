@@ -1,6 +1,6 @@
 # BULWARK-Wallet
 
-![alt text](https://github.com/BULWARK-Project/BULWARK-Android/blob/master/banner/Feature%20Image.jpg)
+![alt text](https://github.com/bulwark-crypto/Press-Pack/blob/master/Social%20Images/facebook_banner.png)
 
 Welcome to the BULWARK mobile wallet for android!
 
