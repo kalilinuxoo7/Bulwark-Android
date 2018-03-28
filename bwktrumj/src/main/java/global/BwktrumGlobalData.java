@@ -11,9 +11,9 @@ import bwktrum.BwktrumPeerData;
 
 public class BwktrumGlobalData {
 
-    public static final String KAALI_TESTNET_SERVER = "node1.bulwarkcrypto.com";
+    public static final String KAALI_TESTNET_SERVER = "explorer.bulwarkcrypto.com";
 
-    public static final String[] TRUSTED_NODES = new String[]{"node1.bulwarkcrypto.com"};
+    public static final String[] TRUSTED_NODES = new String[]{"explorer.bulwarkcrypto.com"};
 
     public static final List<BwktrumPeerData> listTrustedHosts(){
         List<BwktrumPeerData> list = new ArrayList<>();
