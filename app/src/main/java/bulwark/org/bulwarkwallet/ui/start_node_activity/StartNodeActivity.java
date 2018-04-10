@@ -66,7 +66,7 @@ public class StartNodeActivity extends BaseActivity {
                             trustedNodes.add(bwktrumPeerData);
                             for (BwktrumPeerData trustedNode : trustedNodes) {
                                 if (trustedNode.getHost().equals(KAALI_TESTNET_SERVER)) {
-                                    hosts.add("explorer.bulwarkcrypto.com");
+                                    hosts.add("node1.bulwarkcrypto.com");
                                 } else
                                     hosts.add(trustedNode.getHost());
                             }
@@ -122,7 +122,7 @@ public class StartNodeActivity extends BaseActivity {
                 selectionPos = i;
             }
             if (trustedNode.getHost().equals(KAALI_TESTNET_SERVER)){
-                hosts.add("explorer.bulwarkcrypto.com");
+                hosts.add("node1.bulwarkcrypto.com");
             }else
                 hosts.add(trustedNode.getHost());
         }

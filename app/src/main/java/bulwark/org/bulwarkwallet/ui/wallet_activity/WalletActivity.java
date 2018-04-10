@@ -300,9 +300,9 @@ public class WalletActivity extends BaseDrawerActivity {
 
     private void updateBalance() {
         Coin availableBalance = bulwarkModule.getAvailableBalanceCoin();
-        txt_value.setText(!availableBalance.isZero()?availableBalance.toFriendlyString():"0 BWKs");
+        txt_value.setText(!availableBalance.isZero()?availableBalance.toFriendlyString():"0 BWK");
         Coin unnavailableBalance = bulwarkModule.getUnnavailableBalanceCoin();
-        txt_unnavailable.setText(!unnavailableBalance.isZero()?unnavailableBalance.toFriendlyString():"0 BWKs");
+        txt_unnavailable.setText(!unnavailableBalance.isZero()?unnavailableBalance.toFriendlyString():"0 BWK");
         if (bulwarkRate == null)
             bulwarkRate = bulwarkModule.getRate(bulwarkApplication.getAppConf().getSelectedRateCoin());
         if (bulwarkRate!=null) {

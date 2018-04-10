@@ -116,14 +116,7 @@ public class SettingsActivity extends BaseDrawerActivity implements View.OnClick
         buttonTutorial.setOnClickListener(this);
 
         // Video Switch
-        videoSwitch = (Switch) findViewById(R.id.videoSwitch);
-        videoSwitch.setChecked(bulwarkApplication.getAppConf().isSplashSoundEnabled());
-        videoSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {
-                bulwarkApplication.getAppConf().setSplashSound(checked);
-            }
-        });
+
     }
 
     @Override

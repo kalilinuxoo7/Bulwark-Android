@@ -1,12 +1,10 @@
 package bulwark.org.bulwarkwallet.ui.splash_activity;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.VideoView;
-
+import android.widget.ImageView;
+import android.os.Handler;
 import bulwark.org.bulwarkwallet.BulwarkApplication;
 import bulwark.org.bulwarkwallet.R;
 import bulwark.org.bulwarkwallet.ui.start_activity.StartActivity;
@@ -17,7 +15,7 @@ import bulwark.org.bulwarkwallet.ui.wallet_activity.WalletActivity;
  */
 
 public class SplashActivity extends AppCompatActivity {
-    VideoView videoView;
+    ImageView imageView;
     private boolean ispaused = false;
 
     @Override
@@ -25,43 +23,17 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_splash);
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                // Do something after 5s = 5000ms
+                jump();
+            }
+        }, 3500);
 
-        videoView = (VideoView) findViewById(R.id.video_view);
-        Uri video;
-        if(BulwarkApplication.getInstance().getAppConf().isSplashSoundEnabled())
-            video = Uri.parse("android.resource://" + getPackageName() + "/"
-                + R.raw.splash_video);
-        else {
-            //video = Uri.parse("android.resource://" + getPackageName() + "/"
-            //        + R.raw.splash_video_muted);
-            Intent intent = new Intent(this, WalletActivity.class);
-            startActivity(intent);
-            finish();
-            return;
-        }
+        //jump();
 
-        if (videoView != null) {
-            videoView.setVideoURI(video);
-            videoView.setZOrderOnTop(true);
-            videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                public void onCompletion(MediaPlayer mp) {
-                    jump();
-                }
-            });
-
-            videoView.setOnErrorListener(new MediaPlayer.OnErrorListener() {
-                @Override
-                public boolean onError(MediaPlayer mediaPlayer, int i, int i1) {
-                    jump();
-                    return true;
-                }
-            });
-
-            videoView.start();
-
-        }else{
-            jump();
-        }
     }
 
 
